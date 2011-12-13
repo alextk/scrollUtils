@@ -1,4 +1,4 @@
-var JSLINT = require("./lib/jslint").JSLINT,
+var JSHINT = require("./lib/jshint").JSHINT,
 	  print = require("sys").print;
 
 if(process.argv.length < 3){
@@ -8,7 +8,7 @@ if(process.argv.length < 3){
 
 var src = require("fs").readFileSync(process.argv[2], "utf8");
 
-JSLINT(src, { evil: true, forin: true, maxerr: 100, 'continue': true });
+JSHINT(src, {evil: true, eqeqeq: false, forin: false, maxerr: 100, 'continue':true});
 
 // All of the following are known issues that we think are 'ok'
 // (in contradiction with JSLint) more information here:
@@ -21,7 +21,7 @@ var ok = {
 	'Missing "use strict" statement.': true
 };
 
-var e = JSLINT.errors, found = 0, w;
+var e = JSHINT.errors, found = 0, w;
 
 for ( var i = 0; i < e.length; i++ ) {
 	w = e[i];

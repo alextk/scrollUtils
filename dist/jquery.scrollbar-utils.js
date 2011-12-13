@@ -1,14 +1,15 @@
 /*
-* scrollUtils - jQuery mini framework for scrolling calculations
+* scrollUtils - jQuery plugin for calculations of scrollbar position and viewport
 *
-* Version: 0.0.1a
+* Version: 0.0.1
+* Build: 27
 * Copyright 2011 Alex Tkachev
 *
 * Dual licensed under MIT or GPLv2 licenses
 *   http://en.wikipedia.org/wiki/MIT_License
 *   http://en.wikipedia.org/wiki/GNU_General_Public_License
 *
-* Date: Tue Jul 5 11:05:47 2011 +0300
+* Date: 13 Dec 2011 21:50:32
 */
 
 (function($) {
